@@ -28,7 +28,10 @@ public class ExpenseController {
                               @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate to) {
         return service.getExpenses(userId, from, to);
     }
-
+    @GetMapping("/all")
+    public List<Expense> getAllExpenses(@RequestParam String userId) {
+        return service.getAllExpenses(userId);
+    }
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         service.delete(id);

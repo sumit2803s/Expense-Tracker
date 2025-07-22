@@ -9,5 +9,6 @@ import com.example.Expense.Tracker.model.Expense;
 
 public interface ExpenseRepository extends JpaRepository<Expense, Long> {
     List<Expense> findByUserIdAndDateBetween(String userId, LocalDate from, LocalDate to);
+    List<Expense> findAllByUserId(String userId);
 }
 

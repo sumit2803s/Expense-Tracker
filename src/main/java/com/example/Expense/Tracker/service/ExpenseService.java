@@ -18,6 +18,9 @@ public class ExpenseService {
         return expenseRepo.save(expense);
     }
 
+    public List<Expense> getAllExpenses(String userId) {
+        return expenseRepo.findAllByUserId(userId);
+    }
     public List<Expense> getExpenses(String userId, LocalDate start, LocalDate end) {
         return expenseRepo.findByUserIdAndDateBetween(userId, start, end);
     }
