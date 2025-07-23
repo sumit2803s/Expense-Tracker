@@ -182,4 +182,3 @@ Want to contribute or suggest features? Open an issue or PR!
 
 ---
 
-> Built with ❤️ using Spring Boot.
