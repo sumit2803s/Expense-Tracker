@@ -164,18 +164,14 @@ Want to contribute or suggest features? Open an issue or PR!
     "description": "Monthly recurring subscription",
     "category": "UTILITIES",
     "amount": 499,
-    "date": "2025-07-01",
-    "isRecurring": true,
-    "userId": "user123"
+    "date": "2025-07-01"
   },
   {
     "title": "Cab to Airport",
     "description": "Ola cab from home to terminal",
     "category": "TRAVEL",
     "amount": 880,
-    "date": "2025-07-12",
-    "isRecurring": false,
-    "userId": "user123"
+    "date": "2025-07-12"
   }
 ]
 ```
